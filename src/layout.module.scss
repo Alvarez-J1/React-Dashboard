@@ -1,0 +1,9 @@
+.layout {
+max-width: 85rem;
+margin: auto;
+
+
+@media screen and (mind-width: 170px) {
+max-width: 92rem;
+}
+}
