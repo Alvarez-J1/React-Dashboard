@@ -3,3 +3,15 @@
     max-width: 85rem;
     margin: auto;
 }
+.footerWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+@media (max-width: 600px) {
+  .footerWrapper {
+    justify-content: center;
+  }
+}

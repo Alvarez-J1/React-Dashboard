@@ -19,7 +19,7 @@ const Footer = () => {
       >
         <ul className={scss.footerList}>
           <li>
-            <Link href="/">Home</Link>
+            <Link  href="/dashboard">Home</Link>
           </li>
           <li>
             <Link href="/dashboard/data">Data</Link>

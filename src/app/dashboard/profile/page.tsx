@@ -44,16 +44,30 @@ const emailAddress = session?.user?.email || "";
   };
 
   return (
-    <Box
+   <Box
   sx={{
-    px: 3,        // 👈 left/right padding
-    pt: "80px",   // 👈 top padding for header
+    px: { xs: 0, md: 3 },
+    pt: "80px",
+    minHeight: "100dvh",
+    display: "flex",
+    flexDirection: "column",
+    boxSizing: "border-box",
   }}
 >
     
-    <Box sx={{ maxWidth: 1200, mx: "auto",   }} style={{
-        padding: session ? "80px 84px 0 88px" : 0,
-      }}>
+<Box
+  sx={{
+    maxWidth: 1200,
+    mx: "auto",
+    width: "100%",
+    px: { xs: 2, md: "84px" },
+    pt: { xs: 2, md: "80px" },
+pl: { xs: "112px", md: "88px" },
+    display: "flex",
+    flexDirection: "column",
+    alignItems:  "stretch",
+  }}
+>
       <Typography variant="h4" sx={{ mb: 2, fontWeight: 700  }}>
         Profile
       </Typography>
@@ -62,15 +76,17 @@ const emailAddress = session?.user?.email || "";
         Hey {session?.user?.name || "User"}, welcome to your profile 👋
       </Typography>
 
-      <Paper
-        sx={{
-          p: { xs: 3, md: 5 },
-          bgcolor: "background.paper",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+     <Paper
+  sx={{
+    width: "100%",
+    maxWidth: { xs: 360, sm: 520 },
+    mx: "auto",
+    p: { xs: 2, md: 5 },
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  }}
+>
         <Avatar
           src={session?.user?.image || ""}
           alt={session?.user?.name || "User"}
@@ -83,7 +99,7 @@ const emailAddress = session?.user?.email || "";
           }}
         />
 
-        <Box component="form" sx={{ width: "100%", maxWidth: 520 }}>
+        <Box component="form" sx={{ width: "100%", pb: 3  }}>
           <Grid container spacing={2}>
             <Grid size={{ xs: 12, sm: 6 }}>
               <TextField
@@ -174,8 +190,13 @@ const emailAddress = session?.user?.email || "";
           </Grid>
         </Box>
       </Paper>
-      <Footer />
+      
       </Box>
+      <Box sx={{ mt: "auto" }}>
+   <Box sx={{ display: { xs: "none", md: "block" } }}>
+  <Footer />
+</Box>
+</Box>
     </Box>
    
     

@@ -1,9 +1,8 @@
 "use client";
 
 import SideMenu from "@/components/SideMenu/SideMenu";
-import { useSession } from "next-auth/react";
-
 import Footer from "@/components/Footer/Footer";
+import { useSession } from "next-auth/react";
 
 export default function DashboardLayout({
   children,
@@ -14,18 +13,18 @@ export default function DashboardLayout({
 
   return (
     <main
-//   style={{
-//  padding: session ? "80px 24px 0 88px" : 0,
-//   }}
->
-  <div style={{ display: "flex", flexDirection: "column", gap: "5rem"  }}> <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-  {children}
-</div>
-    
-    
-  </div>
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <div style={{ flex: 1 }}>
+        {children}
+      </div>
 
-  {session && <SideMenu />}
-</main>
+      {/* {session && <Footer />} */}
+      {session && <SideMenu />}
+    </main>
   );
 }

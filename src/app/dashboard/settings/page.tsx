@@ -8,10 +8,9 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
-import { Container } from "@mui/material";
 import Footer from "@/components/Footer/Footer";
 import { useSession } from "next-auth/react";
-
+import scss from "../../Home.module.scss";
 
   
 
@@ -38,11 +37,18 @@ export default function Settings() {
   };
 
   return (
-    <main style={{
-            padding: session ? "212px 84px 0 88px" : 0,
-          }}>
+    <Box component="main" className={scss.main} sx={{
+    padding: session
+      ? { xs: "80px 16px 0 88px", md: "245px 84px 0 88px" }
+      : 0,
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+  }}
+>
+         
 
-    
+     <Box sx={{ flex: 1 }}>
     <Box sx={{ maxWidth: 1200, mx: "auto",   }}>
       <Typography variant="h4"  sx={{ mb: 3, fontWeight: 700 }}>
         Settings
@@ -106,10 +112,13 @@ export default function Settings() {
         Save Settings
       </Button>
     
-  <Footer />
+ 
 
     </Box>
-  
-    </main>
+    </Box>
+  <Box sx={{ display: { xs: "none", md: "block" } }}>
+  <Footer />
+</Box>
+    </Box>
   );
 }

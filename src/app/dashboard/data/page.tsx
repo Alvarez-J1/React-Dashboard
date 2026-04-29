@@ -17,10 +17,17 @@ const Data = () => {
   });
 
   return (
-     <main className={scss.main} style={{
-            padding: session ? "80px 84px 0 88px" : 0,
-          }}>
+   <main
+  className={scss.main} 
+  style={{
+    padding: session ? "80px 16px 0 72px" : 0,
+    flexDirection: "column",
+    minHeight: "100vh",
+            display: "flex",
+  }}
+>
     <>
+    <Box sx={{ flex: 1 }}>
       <Typography variant="h4" gutterBottom>
         Data
       </Typography>
@@ -29,7 +36,7 @@ const Data = () => {
         The best data available here at your fingertips.
       </Typography>
 
-      <Box sx={{ height: 900, width: "100%" }}>
+      <Box sx={{ height: {  xs: 1200, sm: 1200, md: 900,  lg: 900, },  width: { xs: "700px", md: "100%" },  }}>
         <DataGrid
           {...data}
           loading={loading}
@@ -54,7 +61,8 @@ const Data = () => {
   }}
         />
       </Box>
-      <Footer />
+</Box>
+<Footer/>
       
     </>
     </main>
