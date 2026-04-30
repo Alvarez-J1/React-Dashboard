@@ -36,7 +36,7 @@ const Data = () => {
         The best data available here at your fingertips.
       </Typography>
 
-      <Box sx={{ height: {  xs: 1200, sm: 1200, md: 900,  lg: 900, },  width: { xs: "700px", md: "100%" },  }}>
+      <Box sx={{ height: {  xs: 1300, sm: 1200, md: 900,  lg: 900, },  width: { xs: "700px", md: "100%" },  }}>
         <DataGrid
           {...data}
           loading={loading}
