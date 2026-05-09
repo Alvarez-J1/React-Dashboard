@@ -1,4 +1,4 @@
-# Datara — Sales Analytics Dashboard
+# Datara — SalesForce Dashboard
 
 Datara is a responsive front-end sales analytics dashboard built with Next.js, React, TypeScript, Material UI, and Chart.js.
 
