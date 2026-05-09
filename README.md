@@ -21,7 +21,7 @@ https://react-dashboard-murex.vercel.app
 
 ## Tech Stack
 
-React • Next.js • TypeScript • JavaScript • Material UI • Chart.js • Sass/SCSS • NextAuth • Git • Vercel
+React • Next.js • TypeScript  • Material UI • Chart.js • Sass/SCSS • NextAuth • Git • Vercel
 
 ## What I Practiced
 
