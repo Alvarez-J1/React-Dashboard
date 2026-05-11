@@ -1,79 +1,83 @@
-WTWR (What To Wear Right Now) — Frontend
-Description
-WTWR is a weather-based clothing recommendation application.
-It displays the user's current location, date, and temperature, and suggests appropriate clothing items based on current weather conditions.
+# Datara — SalesForce Dashboard
 
-Technologies Used
-React
-JavaScript (ES6+)
-HTML5
-CSS3
-Flexbox
-BEM Methodology
-Project Details
-Built using modular React components
-Uses props and event handlers for component communication
-Responsive layout designed with Flexbox
-Styled using BEM for maintainable CSS structure
-Backend
-This project connects to a Node.js and Express backend.
+Datara is a responsive front-end sales analytics dashboard built with Next.js, React, TypeScript, Material UI, and Chart.js.
 
-Backend repository:
-https://github.com/Alvarez-J1/se_project_express
+The project focuses on clean UI, dashboard-style layouts, interactive data visualization, responsive design, and modern front-end architecture.
 
-Status
-The frontend is complete.
-Live demo: https://se-project-wtwr.onrender.com/
+## Live Demo
 
-About
-React front-end application WTWR
+https://react-dashboard-murex.vercel.app
 
-Resources
-Readme
-Activity
-Stars
-0 stars
-Watchers
-1 watching
-Forks
-0 forks
-Releases
-No releases published
-Create a new release
-Packages
-No packages published
-Publish your first package
-Contributors
-1
-@Alvarez-J1
-Alvarez-J1 Joel Alvarez
-Languages
-JavaScript
-76.6%
+## Features
 
-CSS
-22.7%
+- Responsive dashboard layout
+- Dark and light mode theme toggle
+- KPI summary cards
+- Interactive sales chart
+- Sidebar navigation
+- Authentication-based UI
+- Clean component structure
+- Mobile-friendly design
 
-HTML
-0.7%
-Generated from tripleten-com/se_project_react
-Suggested workflows
-Based on your tech stack
-Publish Node.js Package logo
-Publish Node.js Package
-Publishes a Node.js package to npm.
-Deno logo
-Deno
-Test your Deno project
-Datadog Synthetics logo
-Datadog Synthetics
-Run Datadog Synthetic tests within your GitHub Actions workflow
-More workflows
-Footer
-© 2026 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Co
+## Tech Stack
+
+React • Next.js • TypeScript  • Material UI • Chart.js • Sass/SCSS • NextAuth • Git • Vercel
+
+## What I Practiced
+
+- Building reusable React components
+- Working with Next.js App Router
+- Styling with Material UI and SCSS modules
+- Creating responsive layouts
+- Managing theme state
+- Displaying dashboard data with charts
+- Structuring a modern front-end project
+
+## Screenshots
+## Home Page
+<img width="1920" height="922" alt="Screenshot 2026-05-01 141824" src="https://github.com/user-attachments/assets/8d3bbb74-1e7b-4fa0-89e0-6ac3642a94fa" />
+
+## Data Page
+<img width="1920" height="963" alt="Screenshot 2026-05-02 021526" src="https://github.com/user-attachments/assets/31a34cac-596d-4ba6-8903-f6a3b9eba553" />
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Alvarez-J1/React-Dashboard.git
+```
+
+Go into the project folder:
+
+```bash
+cd React-Dashboard
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Open:
+
+```bash
+http://localhost:3000
+```
+
+in your browser.
+
