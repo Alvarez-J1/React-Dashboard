@@ -190,11 +190,12 @@ pl: { xs: "112px", md: "88px" },
           </Grid>
         </Box>
       </Paper>
-      
+      <Footer />
       </Box>
+  
       <Box sx={{ mt: "auto" }}>
    <Box sx={{ display: { xs: "none", md: "block" } }}>
-  <Footer />
+ 
 </Box>
 </Box>
     </Box>

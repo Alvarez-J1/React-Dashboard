@@ -5,7 +5,7 @@ import scss from "./TransactionsBottomRow.module.scss";
 
 const TransactionsBottomRow = () => {
   return (
-    <Grid container spacing={2} className={scss.bottomRow}>
+    <Grid container spacing={2} className={scss.bottomRow} sx={{ width: "100%", maxWidth: "100%" }}>
       {[1, 2, 3, 4].map((item) => (
         <Grid key={item} size={{ xs: 12, sm: 6, md: 3 }}>
           <Paper className={scss.dataCard}>

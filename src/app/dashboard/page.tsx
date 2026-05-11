@@ -1,7 +1,6 @@
 "use client";
 
 import Login from "@/components/Login/login";
-import SideMenu from "@/components/SideMenu/SideMenu";
 import { useSession } from "next-auth/react";
 import Box from "@mui/material/Box";
 
@@ -20,14 +19,21 @@ export default function Home() {
   component="main"
   className={scss.main}
   sx={{
-    padding: session ? "80px 84px 0 88px" : 0,
-    width: { xs: "900px", md: "100%" },
+    boxSizing: "border-box",
+    width: "100%",
+    maxWidth: "100%",
+    minWidth: 0,
+    ...(session && {
+      pt: { xs: "72px", sm: "80px" },
+      pr: { xs: 1, sm: 2, md: "84px" },
+      pb: 0,
+      pl: { xs: 8, sm: 9, md: "88px" },
+    }),
   }}
 >
     <>
       {session ? (
         <>
-          <SideMenu />
           <DataRibbon />
     <TransactionsPerDay />
     <TransactionsBottomRow />

@@ -25,6 +25,8 @@ const DataChart = (props: ChartConfiguration) => {
       ...props,
       data,
       options: {
+        responsive: true,
+        maintainAspectRatio: false,
         ...options,
         ...chartThemeOptions,
       },
@@ -35,7 +37,18 @@ const DataChart = (props: ChartConfiguration) => {
     };
   }, [data, options, props]);
 
-  return <canvas ref={chartRef} />;
+  return (
+    <div
+      style={{
+        position: "relative",
+        width: "100%",
+        minHeight: 260,
+        maxWidth: "100%",
+      }}
+    >
+      <canvas ref={chartRef} />
+    </div>
+  );
 };
 
 export default DataChart;

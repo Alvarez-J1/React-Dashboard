@@ -60,9 +60,10 @@ const Data = () => {
     },
   }}
         />
+        <Footer/>
       </Box>
 </Box>
-<Footer/>
+
       
     </>
     </main>

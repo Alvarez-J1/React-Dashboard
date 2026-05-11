@@ -9,7 +9,8 @@ const TransactionsPerDay = () => {
 
   return (
     <Grid container spacing={2} className={scss.wrapper}>
-      <Paper className={scss.transactions}>
+      <Grid size={12} sx={{ width: "100%", minWidth: 0 }}>
+        <Paper className={scss.transactions} sx={{ width: "100%", maxWidth: "100%", boxSizing: "border-box" }}>
         <div className={scss.chart}>
           <Typography>Transactions per day</Typography>
           <DataChart type="line" data={lineChartData} />
@@ -65,6 +66,7 @@ const TransactionsPerDay = () => {
           </Card>
         </div>
       </Paper>
+      </Grid>
     </Grid>
   );
 };

@@ -1,7 +1,8 @@
 $breakPoint: 1000px;
 
+/* Do not set display on MUI Grid — conflicts with Grid2 and can shrink the row to content width. */
 .wrapper {
-  display: flex;
+  width: 100%;
 }
 
 .transactions {
@@ -25,14 +26,13 @@ $breakPoint: 1000px;
 
 .cardWrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: flex-start;
   gap: 1rem;
   max-width: 100%;
   width: 100%;
 
   @media screen and (min-width: $breakPoint) {
-    flex-direction: column;
     max-width: 20%;
   }
 }
