@@ -37,20 +37,30 @@ export default function Settings() {
   };
 
   return (
-    <Box component="main" className={scss.main} sx={{
-    padding: session
-      ? { xs: "80px 16px 0 88px", md: "245px 84px 0 88px" }
-      : 0,
-    minHeight: "100vh",
-    display: "flex",
-    flexDirection: "column",
-  }}
->
+    <Box
+      component="main"
+      className={scss.main}
+      sx={{
+        boxSizing: "border-box",
+        width: "100%",
+        maxWidth: "100%",
+        minWidth: 0,
+        ...(session && {
+          pt: { xs: "72px", sm: "120px" },
+          pr: { xs: 1, sm: 2, md: "84px" },
+          pb: 0,
+          pl: { xs: 8, sm: 9, md: "88px" },
+        }),
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
          
 
      <Box sx={{ flex: 1 }}>
-    <Box sx={{ maxWidth: 1200, mx: "auto",   }}>
-      <Typography variant="h4"  sx={{ mb: 3, fontWeight: 700 }}>
+    <Box sx={{ maxWidth: 1200, mx: "auto", pt: { xs: 2, sm: 0 } }}>
+      <Typography variant="h4" sx={{ mb: 3, fontWeight: 700 }}>
         Settings
       </Typography>
 
