@@ -6,7 +6,7 @@ The project focuses on clean UI, dashboard-style layouts, interactive data visua
 
 ## Live Demo
 
-https://react-dashboard-murex.vercel.app
+https://datara-dashboard.vercel.app/
 
 ## Features
 
