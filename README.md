@@ -34,11 +34,14 @@ React • Next.js • TypeScript  • Material UI • Chart.js • Sass/SCSS •
 - Structuring a modern front-end project
 
 ## Screenshots
-## Home Page
+## Desktop View
 <img width="1920" height="922" alt="Screenshot 2026-05-01 141824" src="https://github.com/user-attachments/assets/8d3bbb74-1e7b-4fa0-89e0-6ac3642a94fa" />
 
 ## Data Page
 <img width="1920" height="963" alt="Screenshot 2026-05-02 021526" src="https://github.com/user-attachments/assets/31a34cac-596d-4ba6-8903-f6a3b9eba553" />
+
+## Mobile View
+<img width="428" height="765" alt="image" src="https://github.com/user-attachments/assets/038876df-a8cd-43ec-bbc4-ad29f03057b3" />
 
 ## Getting Started
 
@@ -52,13 +55,13 @@ React • Next.js • TypeScript  • Material UI • Chart.js • Sass/SCSS •
 Clone the repository:
 
 ```bash
-git clone https://github.com/Alvarez-J1/React-Dashboard.git
+git clone https://github.com/Alvarez-J1/Datara.git
 ```
 
 Go into the project folder:
 
 ```bash
-cd React-Dashboard
+cd Datara
 ```
 
 Install dependencies:
@@ -73,11 +76,44 @@ Run the development server:
 npm run dev
 ```
 
-Open:
+Open: http://localhost:3000 in your browser.
 
-```bash
-http://localhost:3000
+## Project Structure
+```text
+Datara/
+├── src/
+│   ├── app/
+│   │   ├── api/auth/[...nextauth]/
+│   │   ├── auth/signin/
+│   │   ├── dashboard/
+│   │   │   ├── data/
+│   │   │   ├── profile/
+│   │   │   ├── settings/
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── providers.tsx
+│   ├── components/
+│   │   ├── Dashboard/
+│   │   ├── DataChart/
+│   │   ├── Footer/
+│   │   ├── Header/
+│   │   ├── Login/
+│   │   ├── SideMenu/
+│   │   └── mockData.ts
+│   ├── helper/
+│   ├── theme/
+│   ├── middleware.ts
+│   └── layout.module.scss
+├── public/
+├── .storybook/
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+├── vitest.config.ts
+└── README.md
 ```
 
-in your browser.
-
+## Author
+Joel Alvarez
