@@ -18,7 +18,7 @@ export default function SignIn() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          gap: theme.spacing(2),
+          gap: theme.spacing(2), // theme.spacing(2) is usually 2 × 8px = 16px.
           boxSizing: "border-box",
           width: "100%",
           maxWidth: "100%",
